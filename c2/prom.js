@@ -72,7 +72,7 @@ const fileWrite = (filename, data) => {
 
 fileWrite('data1.txt','Nov fajl so zapis od promise')
 .then(()=>{
-    console.log('zapisto e uspesen(nov fajl')
+    console.log('zapisot e uspesen nov fajl')
 
 })
 .catch(err => {
