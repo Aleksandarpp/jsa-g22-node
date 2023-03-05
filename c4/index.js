@@ -4,6 +4,8 @@
 // brisenje na studentu od fajlot
 //menuvanje na podatoci na studenti od fajlot
 //citanje na site studenti od fajlot
+
+
 //- treba da dodavame student vo fajlot
 // 1. da ja vcitate celata sodrzina od fajlot/ fs.readFile
 // 2. da ja konvertirate sodrzinata od obicen tekst vo js niza/objekt / JSON.parse 
@@ -29,24 +31,60 @@
 // 4. nizata od js niza/objekt treba da bide knvertirana vo tekst /JSON.stringify
 // 5. teksto treba da bide zacuvan vo fajlot / fs.writeFile
 
- (async () => {
-    let students = await getAllStudent();
-    console.log(students);
+ //async () => {
+ //   let students = await getAllStudent(),
+ //   console,log (students);
     //dodavanje
-    await insertStudent({ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"};)
+ //  await insertStudent({ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"};)
 
-    let students = await getAllStudent();
-    console.log(students);// da go ima pero vo listata
+//    let students = await getAllStudent();
+//    console,log(students);// da go ima pero vo listata
 
     // modifikacija
-    await modifyStudent(0, {ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"});
+//    await modifyStudent(0, {ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"});
 
-    let students = await getAllStudent();
-    console.log(students) // da bide smenet prosekot na Pero
+//    let students = await getAllStudent();
+//    console,log(students) // da bide smenet prosekot na Pero
     // brisenje
-    await deleteStudent(0);
+//    await deleteStudent(0);
 
-    let students = await getAllStudent();
-    console.log(students); // pero da go nema od listata
+//    let students = await getAllStudent();
+//    console.log(students); // pero da go nema od listata
 
-})();
+//})();
+//const fs = require('fs');
+//fs.writeFile(
+//    'data.json',// fajlot kade ke se zapise
+//     'await insertStudent({ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"})'
+  //   , // sto ke bide zapisano vo fajlot'
+//      (err)=>{// f-ja koja ke se izvrsi otkako ke zavrse zapisot
+//        if(err) return console.log(err);
+//        console.log('zapisot e napraven');
+//});
+//fs.writeFile(
+//    'data.json','await insertStudent({ime: "Pero", prezime: "Perovski", prosek: 9.2, grad:"Bitola"})'
+//    , (err)=>{
+//        if(err) return console.log(err);
+//        console.log('zapisot e napraven');
+//});
+
+
+//const fileWrite = (filename, data) => {
+//    return new Promise((success, fail) =>{
+//        fs.writeFile(filename, data, (err) =>{
+//            if (err) return fail(err);
+//            return success();
+//        });
+//    });
+//};
+//const main = async () =>{
+//    try {
+//        await fileWrite('zpisto e uspesen')
+//        await fileWrite('zpisto e uspesen')
+//        await fileWrite('zpisto e uspesen')
+//    } catch(err) {
+//        console.log(err);
+//}
+//};
+//main();
+
